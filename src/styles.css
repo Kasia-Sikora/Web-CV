@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+  background: linear-gradient(rgba(64, 67, 69, 0), #1C1E1F 80%), url('src/assets/background.jpg'), center center, no-repeat, fixed;
+  background-size:  cover;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+}
+
+#personalContent,
+#menuContent,
+#contentDisplay {
+  background-color: #404345;
+  box-shadow: 20px 10px 70px #1f2121 inset;
+  border-radius: 1%;
+}
