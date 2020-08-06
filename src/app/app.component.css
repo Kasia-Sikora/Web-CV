@@ -1,46 +1,5 @@
-#container {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 #content{
   margin-top: 6vh;
   margin-bottom: 6vh;
   height: 88vh;
 }
-
-/*app-menu {*/
-/*  float: left;*/
-/*  !*background:Red;*!*/
-/*  width: 7vw;*/
-/*  height: 30vw;*/
-/*  margin-left: 5vw;*/
-/*  margin-right: 1vw;*/
-/*  margin-top: 7vw;*/
-/*}*/
-
-/*app-personal {*/
-/*  float: left;*/
-/*  !*background:Green;*!*/
-/*  width: 30vw;*/
-/*  height: 38vw;*/
-/*  margin-top: 3vw;*/
-/*  z-index: 1000;*/
-/*  position: fixed;*/
-/*}*/
-
-/*app-content {*/
-/*  float: left;*/
-/*  !*background:blue;*!*/
-/*  margin-left: 29vw;*/
-/*  width: 50vw;*/
-/*  height: 30vw;*/
-/*  margin-top: 7vw;*/
-/*  z-index: 500;*/
-/*  position: fixed;*/
-/*}*/

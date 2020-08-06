@@ -1,15 +1,32 @@
-body{
+html {
   background: linear-gradient(rgba(64, 67, 69, 0), #1C1E1F 80%), url('src/assets/background.jpg'), center center, no-repeat, fixed;
-  background-size:  cover;
+  background-size: cover;
+  opacity: 1;
+  transition: 0.7s ease-in;
+}
+
+body {
   color: white;
   font-family: 'Poppins', sans-serif;
   font-weight: 100;
+  width: 90%;
+  margin: auto;
+  font-size: 16px;
 }
 
 #personalContent,
 #menuContent,
-#contentDisplay {
+.contentDisplay {
   background-color: #404345;
   box-shadow: 20px 10px 70px #1f2121 inset;
   border-radius: 1%;
+}
+
+.contentDisplay {
+  width: 45vw;
+  height: 33vw;
+  float: left;
+  position: relative;
+  margin: 11vh 0 5vw -1vw;
+  color: white;
 }

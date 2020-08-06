@@ -1,7 +1,5 @@
-<div id="container">
-<div id="content">
+<div id="content" [@routeAnimations]="prepareRoute(outlet)">
   <app-menu></app-menu>
   <app-personal></app-personal>
-  <app-content></app-content>
-</div>
+  <router-outlet #outlet="outlet"></router-outlet>
 </div>

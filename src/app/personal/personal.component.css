@@ -17,7 +17,8 @@
   box-shadow: -15px -15px 0 1px rgba(64, 67, 69, 0.2);
   text-align: center;
   font-size: 1.8em;
-  /*background-image: url("src/assets/forest.jpg");*/
+  display: inline-flex;
+  flex-direction: column;
 }
 
 
@@ -41,6 +42,11 @@
   box-shadow: 2px 3px 3px 1px inset black;
 }
 
+div:nth-of-type(4){
+  margin-top: 5.3vw;
+  width: 100%;
+}
+
 .line{
   width: 60%;
   height: 0.08vw;
@@ -50,15 +56,24 @@
   margin-right: auto;
 }
 
-
 #position{
   font-size: 0.6em;
 }
 
 #footer{
+  display: flex;
+  background-color: rgba(0, 0, 0, 0);
+  justify-content: center;
+}
+
+
+.ver-line{
+  width: 0.3%;
+  height: 4vw;
+  background: linear-gradient(#FFFFFFFF, #404345);
   display: block;
-  margin-top:5vw;
-  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -69,6 +84,9 @@ button{
   text-align: center;
   border: none;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo{

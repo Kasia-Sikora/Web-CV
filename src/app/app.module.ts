@@ -4,17 +4,28 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { PersonalComponent } from './personal/personal.component';
-import { ContentComponent } from './content/content.component';
+import {AppRoutingModule} from './app-routing.module';
+import { AboutComponent } from './content/about/about.component';
+import { ContactComponent } from './content/contact/contact.component';
+import { ProjectsComponent } from './content/projects/projects.component';
+import { ResumeComponent } from './content/resume/resume.component';
+
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     PersonalComponent,
-    ContentComponent
+    AboutComponent,
+    ContactComponent,
+    ProjectsComponent,
+    ResumeComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
