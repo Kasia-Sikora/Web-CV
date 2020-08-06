@@ -8,14 +8,14 @@ export const slideInAnimation =
         {optional: true}),
       group([
         query(':enter', [
-          style({opacity: '0.7', transition: 'opacity', transform: 'translateX(-33%)'}),
+          style({opacity: '0.7', transition: 'opacity', transform: 'translateX(-30%)'}),
           animate('0.7s ease-in-out',
             style({transform: 'translateX(0%)'}))
         ], {optional: true}),
         query(':leave', [
           style({opacity: '0.5', transition: 'opacity', transform: 'translateX(0%)'}),
           animate('0.7s ease-in-out',
-            style({transform: 'translateX(-33%)'}))
+            style({transform: 'translateX(-30%)'}))
         ], {optional: true}),
       ])
     ]),
