@@ -1,4 +1,88 @@
-#content{
-  margin: 6vh;
-  height: 88vh;
+#page-display{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
 }
+
+#container {
+  position: relative;
+  height: 80%;
+  width: 90%;
+  max-width: 1311px;
+  max-height: 610px;
+  background-color: white;
+}
+
+#content{
+  background-color: red;
+  position: absolute;
+  left: 480px;
+  width: auto;
+  height: 95%;
+  margin: 2vh 0;
+  max-width: 685px;
+  /*float: left;*/
+}
+/*.contentDisplay{*/
+/*  background-color: red;*/
+/*  position: absolute;*/
+/*  left: 470px;*/
+/*  width: auto;*/
+/*  height: 95%;*/
+/*  margin: 2vh 0;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#container{*/
+/*  margin: 5% 5%;*/
+/*  height: 80%;*/
+/*  position: fixed;*/
+/*  width: 90%;*/
+/*  display: inline-flex;*/
+/*  align-content: center;*/
+/*}*/
+
+/*#content{*/
+/*position: relative;*/
+/*}*/
