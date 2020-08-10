@@ -1,17 +1,27 @@
 <div id="menuContent">
-  <button [routerLink]="['/about']"><img src="../../assets/menu/about.png" alt="about">
-    ABOUT
-  </button>
-  <div class="line"></div>
-  <button [routerLink]="['/resume']"><img src="../../assets/menu/resume.png" alt="resume">
-    RESUME
-  </button>
-  <div class="line"></div>
-  <button [routerLink]="['/projects']"><img id="work" src="../../assets/menu/work.png" alt="projects">
-    PROJECTS
-  </button>
-  <div class="line"></div>
-  <button [routerLink]="['/contact']"><img src="../../assets/menu/contact.png" alt="contact">
-    CONTACT
-  </button>
+  <div id="mini">
+    <div class="centered">
+      <div id="photoShadow"></div>
+      <img id="photo" src="../../assets/zdjecieCVweb.png" alt="photo">
+          Katarzyna Sikora
+    </div>
+    <div class="line"></div>
+  </div>
+  <div id="menu">
+    <button [routerLink]="['/about']"><img src="../../assets/menu/about.png" alt="about">
+      ABOUT
+    </button>
+    <div class="line"></div>
+    <button [routerLink]="['/resume']"><img src="../../assets/menu/resume.png" alt="resume">
+      RESUME
+    </button>
+    <div class="line"></div>
+    <button [routerLink]="['/projects']"><img id="work" src="../../assets/menu/work.png" alt="projects">
+      PROJECTS
+    </button>
+    <div class="line"></div>
+    <button [routerLink]="['/contact']"><img src="../../assets/menu/contact.png" alt="contact">
+      CONTACT
+    </button>
+  </div>
 </div>
