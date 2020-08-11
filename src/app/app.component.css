@@ -4,7 +4,7 @@
   width: 100%;
   /*max-width: 1311px;*/
   /*max-height: 610px;*/
-  background-color: white;
+  background-color: #2d2e31;
 }
 
 #content{
@@ -12,9 +12,14 @@
   position: relative;
   width: 100%;
   height: auto;
-  max-width: 685px;
-  float: left;
+  /*max-width: 400px;*/
+  /*left: 50%;*/
+  /*margin-right: -50%;*/
+  /*transform: translate(-50%, 0);*/
+  /*display: flex;*/
 }
+
+
 
 /*#page-display{*/
 /*  display: flex;*/

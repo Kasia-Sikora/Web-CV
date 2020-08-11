@@ -13,7 +13,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin: 5px;
+  margin: 5px 0 0 5px;
 }
 
 #menu {
@@ -24,8 +24,8 @@
 }
 
 .centered>#photo{
-  width: 40px;
-  margin: 5px;
+  width: 35px;
+  margin: 0 10px 5px 10px;
 }
 
 #mini>.line{
@@ -33,6 +33,7 @@
   height: 1px;
   background: linear-gradient(to right, #404345, #FFFFFFFF, #404345);
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 img {
@@ -50,6 +51,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   font-size: 9px;
   margin: 5px 0;
   min-width: 65px;
@@ -62,7 +64,7 @@ button:focus{
 .line {
   width: 1px;
   height: inherit;
-  background: linear-gradient(to top, #1C1E1F 30%, #FFFFFFFF);
+  background: linear-gradient(to top, rgba(45, 46, 49, 0.5) 20%, #FFFFFFFF);
 }
 
 

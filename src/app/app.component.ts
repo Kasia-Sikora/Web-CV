@@ -18,4 +18,5 @@ export class AppComponent {
   prepareRoute(outlet: RouterOutlet) {
     return outlet.activatedRouteData && outlet.activatedRouteData['animation'];
   }
+
 }
