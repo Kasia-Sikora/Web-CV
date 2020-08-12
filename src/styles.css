@@ -30,7 +30,7 @@ body {
 [class*="col-"] {
 float: left;
 /*padding: 15px;*/
-border: 1px solid red;
+border: 1px solid rgba(0, 0, 0, 0);
 }
 
 /*contents display */
@@ -91,6 +91,7 @@ float: right;
 
   .contentDisplay{
     max-width: none;
+    margin-left: -10px;
   }
 
   #content>.col-s-10{
@@ -117,6 +118,13 @@ float: right;
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+
+  .contentDisplay{
+    max-height: 530px;
+    overflow: auto;
+    position: relative;
+  }
+
 }
 /*#content{*/
 /*  position: absolute;*/
