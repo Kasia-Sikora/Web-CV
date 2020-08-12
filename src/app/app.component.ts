@@ -6,12 +6,17 @@ import {slideInAnimation} from './animations';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  animations: [ slideInAnimation ]
+  animations: [slideInAnimation]
 })
 export class AppComponent {
+
   title = 'CV';
+
+  constructor() {
+  }
 
   prepareRoute(outlet: RouterOutlet) {
     return outlet.activatedRouteData && outlet.activatedRouteData['animation'];
   }
+
 }

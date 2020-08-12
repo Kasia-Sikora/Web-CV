@@ -1,17 +1,27 @@
 <div id="menuContent">
-  <a [routerLink]="['/about']" class="button"><img src="../../assets/menu/about.png">
-    ABOUT ME
-  </a>
-  <div class="line"></div>
-  <a [routerLink]="['/resume']" class="button"><img src="../../assets/menu/resume.png">
-    RESUME
-  </a>
-  <div class="line"></div>
-  <a [routerLink]="['/projects']" class="button"><img id="work" src="../../assets/menu/work.png">
-    PROJECTS
-  </a>
-  <div class="line"></div>
-  <a [routerLink]="['/contact']" class="button"><img src="../../assets/menu/contact.png">
-    CONTACT
-  </a>
+  <div id="mini">
+    <div class="centered">
+      <div id="photoShadow"></div>
+      <img id="photo" src="../../assets/zdjecieCVweb.png" alt="photo">
+          Katarzyna Sikora
+    </div>
+    <div class="line"></div>
+  </div>
+  <div id="menu">
+    <button [routerLink]="['/about']" (click)="scroll('#about-dashboard')"><img src="../../assets/menu/about.png" alt="about">
+      ABOUT
+    </button>
+    <div class="line"></div>
+    <button [routerLink]="['/resume']"><img src="../../assets/menu/resume.png" alt="resume">
+      RESUME
+    </button>
+    <div class="line"></div>
+    <button [routerLink]="['/projects']"><img id="work" src="../../assets/menu/work.png" alt="projects">
+      PROJECTS
+    </button>
+    <div class="line"></div>
+    <button [routerLink]="['/contact']"><img src="../../assets/menu/contact.png" alt="contact">
+      CONTACT
+    </button>
+  </div>
 </div>

@@ -1,24 +1,78 @@
-span {
-  float: right;
-}
+/*.contentDisplay{*/
+/*  !*background-color: darkviolet;*!*/
+/*  position: relative;*/
+/*  !*left: 470px;*!*/
+/*  width: auto;*/
+/*  height: 95%;*/
+/*  margin: 1vh 0;*/
+/*  border-radius: 2%;*/
+/*    background-color: #404345;*/
+/*    box-shadow: 20px 10px 70px #1f2121 inset;*/
+/*  padding: 5%;*/
+/*}*/
 
 p {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   text-align: justify;
 }
 
 .line{
   width: 100%;
-  height: 0.08vw;
+  height: 1px;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(64, 67, 69, 0) 100%);
-  margin: 2% 0 0 3%;
+  margin: 2% 0;
 }
 
 .title{
   font-weight: bold;
   font-size: 1.3em;
+  margin-left: 1vh;
 }
 
-#about-dashboard{
-  margin: 5% 8% 0 10%;
+img {
+  width: 27px;
+  float: right;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*span {*/
+/*  float: right;*/
+
+/*}*/
+
+
+
+
+
+
+
+/*.contentDisplay {*/
+
+/*  */
+/*  position: absolute;*/
+/*  top: auto;*/
+/*  right: auto;*/
+/*  width: 54vw;*/
+/*  height: 38.5vw;*/
+/*  float: left;*/
+/*  !*position: absolute;*!*/
+/*  !*margin: 4vh 0 0 -1vw;*!*/
+/*  color: white;*/
+/*}*/

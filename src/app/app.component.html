@@ -1,5 +1,18 @@
-<div id="content" [@routeAnimations]="prepareRoute(outlet)">
-  <app-menu></app-menu>
-  <app-personal></app-personal>
-  <router-outlet #outlet="outlet"></router-outlet>
+<div class="container" [@routeAnimations]="prepareRoute(outlet)">
+  <div class="row">
+    <div class="col- col-s-3 col-3">
+      <app-menu></app-menu>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col- col-s-10 col-12">
+      <app-personal></app-personal>
+    </div>
+  </div>
+  <div class="row" id="content">
+    <div class="col- col-s-10 col-12">
+      <router-outlet #outlet="outlet"></router-outlet>
+    </div>
+  </div>
 </div>
+

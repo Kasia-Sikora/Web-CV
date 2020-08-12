@@ -1,84 +1,86 @@
-#photo {
-  width: 10vw;
-  height: auto;
-  display: block;
-  margin: 10vw auto 1em;
+#personalContent{
   position: relative;
-}
-
-
-#personalContent {
-  position: relative;
-  width: 32vw;
-  height: 41vw;
-  float: left;
+  background-color: #404345;
+  width: 100%;
+  height: 600px;
   z-index: 2;
-  margin: 1vh 0;
-  box-shadow: -15px -15px 0 1px rgba(64, 67, 69, 0.2);
-  text-align: center;
-  font-size: 1.8em;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  max-height: 560px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+  box-shadow: -15px -15px 0 1px rgba(64, 67, 69, 0.2);
+  border-radius: 2%;
+  font-size: 1.8rem;
 }
-
 
 #background{
   width: 100%;
-  height: 55%;
-  background: linear-gradient(rgba(64, 67, 69, 0), rgb(64, 67, 69) 100%), url("src/assets/forest.jpg");
+  height: 60%;
+  background: linear-gradient(rgba(64, 67, 69, 0), rgb(64, 67, 69) 100%), url("src/assets/forest.jpg") center center, no-repeat, fixed;
+  background-size: cover;
   box-shadow: 20px 10px 70px rgba(64, 67, 69, 0) inset;
   border-radius: 1%;
+  position: relative;
+}
+
+#photo {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin-top: 155px;
   position: absolute;
 }
 
 #photoShadow{
-  width: 11vw;
-  height: 11vw;
+  width: 160px;
+  height: 160px;
   background-color: #58712e;
   position: absolute;
   display: block;
-  margin: 9.5vw 12vw 1em;
+  margin-top: 150px;
   border-radius: 50%;
   box-shadow: 2px 3px 3px 1px inset black;
 }
 
-div:nth-of-type(4){
-  margin-top: 8vw;
-  width: 100%;
-}
-
 .line{
   width: 60%;
-  height: 0.08vw;
+  height: 1px;
   background: linear-gradient(to right, #404345, #FFFFFFFF, #404345);
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
 }
 
-#position{
-  font-size: 0.6em;
+.logo{
+  width: 40px;
+}
+
+div:nth-of-type(4){
+  margin-top: 90px;
+  width: 100%;
 }
 
 #footer{
   display: flex;
   background-color: rgba(0, 0, 0, 0);
   justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  max-height: 70px;
 }
 
-
-.ver-line{
-  width: 0.3%;
-  height: 4vw;
-  background: linear-gradient(#FFFFFFFF, #404345);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+#position{
+  font-size: 1.2rem;
 }
-
 
 button{
-  height: 5vw;
+  height: 100%;
   width: 50%;
   background-color: #404345;
   text-align: center;
@@ -87,9 +89,84 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5%;
 }
 
-.logo{
-  width: 3vw;
+
+.ver-line{
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(#FFFFFFFF, #404345);
+  align-self: flex-end;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#personalContent {*/
+/*  position: relative;*/
+/*  width: 32vw;*/
+/*  height: 41vw;*/
+/*  float: left;*/
+/*  z-index: 2;*/
+/*  margin: 1vh 0;*/
+/*  box-shadow: -15px -15px 0 1px rgba(64, 67, 69, 0.2);*/
+/*  text-align: center;*/
+/*  font-size: 1.8em;*/
+/*  display: inline-flex;*/
+/*  flex-direction: column;*/
+/*  background-color: #404345;*/
+/*  !*box-shadow: 20px 10px 70px #1f2121 inset;*!*/
+/*  */
+/*  !*position: absolute;*!*/
+/*  top: auto;*/
+/*  right: auto;*/
+
+
+
+
+
+
+/*}*/
+
+
+
+
+
+
+
+
 

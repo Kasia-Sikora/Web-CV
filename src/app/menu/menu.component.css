@@ -1,42 +1,90 @@
-img {
-  width: 2vw;
+#menuContent {
+  position: fixed;
+  width: 100%;
+  background-color: #404345;
+  float: left;
+  top: 0;
+  right: 0;
+  z-index: 5;
   height: auto;
-  display: block;
+}
+
+.centered{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0 0 5px;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+}
+
+.centered>#photo{
+  width: 35px;
+  margin: 0 10px 5px 10px;
+}
+
+#mini>.line{
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, #404345, #FFFFFFFF, #404345);
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+img {
+  width: 27px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.button {
+button {
   background-color: rgba(0, 0, 0, 0);
   color: white;
-  border:none;
-  height: 6vw;
+  border: none;
+  height: auto;
   text-decoration: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  font-size: 9px;
+  margin: 5px 0;
+  min-width: 65px;
 }
 
-.line{
-  width: 100%;
-  height: 0.08vw;
-  background: linear-gradient(to right, #1C1E1F 30%, #FFFFFFFF);
+button:focus{
+  /*background-image: radial-gradient(#404345, #FFFFFFFF, #404345);*/
 }
 
-#work{
-  width: 40%;
+.line {
+  width: 1px;
+  height: inherit;
+  background: linear-gradient(to top, rgba(45, 46, 49, 0.5) 20%, #FFFFFFFF);
 }
 
-#menuContent{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  position: relative;
-  margin: 5vw 0.5vw auto 0;
-  width: 7vw;
-  float: left;
-  height: 30vw;
-  font-size: 0.8em;
-  text-align: center;
-  z-index: 4;
-}
+
+/*#menuContent{*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  justify-content: space-evenly;*/
+/*  position: relative;*/
+/*  margin: 5vw 0.5vw auto 0;*/
+/*  width: 7vw;*/
+/*  float: left;*/
+/*  height: 30vw;*/
+/*  font-size: 0.8em;*/
+/*  text-align: center;*/
+/*  z-index: 4;*/
+/*  background-color: #404345;*/
+/*  box-shadow: 20px 10px 70px #1f2121 inset;*/
+/*  border-radius: 1%;*/
+/*  !*position: absolute;*!*/
+/*  top: auto;*/
+/*  right: auto;*/
+/*}*/
+
