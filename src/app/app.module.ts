@@ -12,6 +12,7 @@ import { ResumeComponent } from './content/resume/resume.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatExpansionModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

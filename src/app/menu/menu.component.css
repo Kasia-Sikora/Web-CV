@@ -7,6 +7,8 @@
   right: 0;
   z-index: 5;
   height: auto;
+  box-shadow: 20px 10px 70px #1f2121 inset;
+  border-radius: 1%;
 }
 
 .centered{
@@ -58,7 +60,8 @@ button {
 }
 
 button:focus{
-  /*background-image: radial-gradient(#404345, #FFFFFFFF, #404345);*/
+/*  color: #58712e;*/
+/*  text-shadow: olive;*/
 }
 
 .line {
@@ -67,6 +70,32 @@ button:focus{
   background: linear-gradient(to top, rgba(45, 46, 49, 0.5) 20%, #FFFFFFFF);
 }
 
+
+@media only screen and (min-width: 670px) {
+  #mini{
+    display: none;
+  }
+
+  #menuContent{
+    position: fixed;
+    top: 10vh;
+    right: unset;
+    margin-left: 20px;
+    width: 70px;
+  }
+
+  #menu{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
+
+  #menu>.line{
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, rgba(45, 46, 49, 0.5) 20%, #FFFFFFFF);
+  }
+}
 
 /*#menuContent{*/
 /*  display: flex;*/
@@ -87,4 +116,6 @@ button:focus{
 /*  top: auto;*/
 /*  right: auto;*/
 /*}*/
+
+
 

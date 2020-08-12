@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {slideInAnimation} from './animations';
 
@@ -8,9 +8,21 @@ import {slideInAnimation} from './animations';
   styleUrls: ['./app.component.css'],
   animations: [slideInAnimation]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
   title = 'CV';
+
+  public innerWidth: any;
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.innerWidth = window.innerWidth;
+    console.log(this.innerWidth);
+  }
+
+  ngOnInit() {
+    this.innerWidth = window.innerWidth;
+  }
 
   constructor() {
   }
