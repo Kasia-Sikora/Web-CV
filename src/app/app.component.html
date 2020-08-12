@@ -1,16 +1,16 @@
 <div class="container" [@routeAnimations]="prepareRoute(outlet)">
   <div class="row">
-    <div class="col- col-s-3 col-3">
+    <div class="col-s-2 col-2">
       <app-menu></app-menu>
     </div>
   </div>
   <div class="row">
-    <div class="col- col-s-10 col-12">
+    <div class="col-s-10 col-4">
       <app-personal></app-personal>
     </div>
   </div>
   <div class="row" id="content">
-    <div class="col- col-s-10 col-12">
+    <div class="col-s-10 col-4">
       <router-outlet #outlet="outlet"></router-outlet>
     </div>
   </div>
