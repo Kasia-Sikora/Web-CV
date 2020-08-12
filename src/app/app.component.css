@@ -8,7 +8,7 @@
 }
 
 #content{
-  background-color: red;
+  /*background-color: red;*/
   position: relative;
   width: 100%;
   height: auto;
@@ -17,6 +17,10 @@
   /*margin-right: -50%;*/
   /*transform: translate(-50%, 0);*/
   /*display: flex;*/
+}
+
+.contentDisplay{
+  border-radius: 6px;
 }
 
 /*For Tablets*/
@@ -34,8 +38,18 @@
 
 /* For desktop: */
 @media only screen and (min-width: 1130px) {
+  html{
+    overflow: hidden;
+  }
   .container{
+    position: absolute;
     width: 100%;
+    max-width: 1150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: unset;
+    margin: unset;
   }
 
   #menuContent{
@@ -45,6 +59,18 @@
   #menuContent>.line{
     width: inherit;
     height: 1px;
+  }
+
+  #content{
+    position: absolute;
+    margin-top: 10px;
+  }
+
+  .contentDisplay {
+    position: relative;
+    overflow: auto;
+    max-height: 530px;
+    margin-left: -10px;
   }
 }
 
