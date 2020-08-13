@@ -13,6 +13,7 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
     this.isVisible = true;
+    const s = document.getElementById('about-dashboard');
+    s.scrollIntoView();
   }
-
 }
