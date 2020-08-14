@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var require: any;
+const FileSaver = require('file-saver');
+
 @Component({
   selector: 'app-personal',
   templateUrl: './personal.component.html',
@@ -7,9 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonalComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
+  downloadPdf() {
+    const pdfUrl = './assets/Katarzyna_Sikora_CV.pdf';
+    const pdfName = 'Katarzyna_Sikora_CV';
+    FileSaver.saveAs(pdfUrl, pdfName);
+  }
+
+  goToLink(page: string) {
+    window.open(page);
+  }
 }

@@ -8,6 +8,16 @@
 /*  !*margin: 2vh 0;*!*/
 /*}*/
 
+.author{
+  font-style: unset;
+  float: right;
+}
+
+
+blockquote{
+  font-style: italic;
+}
+
 header>.line{
   width: 100%;
 }

@@ -11,8 +11,4 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  scroll(target: any) {
-
-  }
 }
