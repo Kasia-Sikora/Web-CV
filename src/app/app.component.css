@@ -21,6 +21,7 @@
 
 .contentDisplay{
   border-radius: 6px;
+  padding: 10px;
 }
 
 /*For Tablets*/
@@ -72,6 +73,7 @@
     max-height: 530px;
     margin-left: -10px;
   }
+
 }
 
 

@@ -13,4 +13,7 @@ export class ResumeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scroll(s: string) {
+    const d = document.getElementById(s).scrollIntoView({ behavior: 'smooth', block: 'start'});
+  }
 }

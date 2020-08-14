@@ -1,14 +1,18 @@
-<div class="contentDisplay">
-  <div id="resume-dashboard">
+<div class="contentDisplay" id="resume">
     <header>
       <div class="title"><img src="/assets/menu/resume.png" alt="resume">Resume</div>
+<!--      <div class="resume-links">-->
+<!--        <button (click)="scroll('skills')">Skills</button>-->
+<!--        <button (click)="scroll('work-experience')">Work Experence</button>-->
+<!--        <button (click)="scroll('dalej')">Work Experence</button>-->
+<!--      </div>-->
       <div class="line"></div>
     </header>
-
-    <h4>Skills</h4>
+  <div id="resume-dashboard">
+    <h4 id="skills">Skills</h4>
     <div class="line"></div>
     <div class="row">
-      <div class="col-5">
+      <div class="col-6 col-s-6">
         <ul>Hard Skills:
           <li>JAVA SE</li>
           <li>Spring</li>
@@ -18,7 +22,7 @@
           <li>Python</li>
         </ul>
       </div>
-      <div class="col-7">
+      <div class="col-6 col-s-6">
         <ul>Soft Skills:
           <li>Hardworking</li>
           <li>Relentless</li>
@@ -31,7 +35,7 @@
       </div>
     </div>
 
-    <h4>Work Experience</h4>
+    <h4 id="work-experience">Work Experience</h4>
     <div class="line"></div>
     <mat-accordion>
       <mat-expansion-panel>
@@ -64,7 +68,7 @@
       <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
-            <p>[2011-2011] Florist
+            <p><span class="date">[2011-2011]</span><br> Florist<br>
               <mat-panel-description>
                 "Strelicja" Florist
               </mat-panel-description>
@@ -103,5 +107,26 @@
       </mat-expansion-panel>
     </mat-accordion>
 
+    <h4 id="education">Education</h4>
+    <div class="line"></div>
+    <ul>
+      <li>Full-Stack Developer (2019 - 2020) — Codecool</li>
+      <li>Zootechnics (2008 - 2011) — Warsaw University of Life Sciences</li>
+    </ul>
+
+    <h4 id="recommendation">Peer Recommendations</h4>
+    <div class="line"></div>
+    <blockquote>“Kasia is a highly motivated and driven person. She commits herself to
+      every project she's involved in and doesn't give up when problems
+      arrive. Kasia creates a great work atmosphere, and it's always a pleasure
+      to work with her. I think she'd be a great asset to every team.”
+      </blockquote><span class="author"> - Vitalij Kokhanau</span>
+<br>
+    <blockquote>“Katarzyna is quite an independent programmer who relies mostly on
+      herself to solve her problems. Not afraid to ask for help, but she'll first try
+      and finish the task herself. She works well within groups, other people
+      like working with her, because she is a fun person to be around and can
+      contribute to any task at hand.”
+      </blockquote><span class="author"> - Adam Panasiuk</span>
   </div>
 </div>

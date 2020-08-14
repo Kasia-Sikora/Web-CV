@@ -92,6 +92,7 @@ float: right;
   .contentDisplay{
     max-width: none;
     margin-left: -10px;
+    height: unset;
   }
 
   #content>.col-s-10{
@@ -121,8 +122,15 @@ float: right;
 
   .contentDisplay{
     max-height: 530px;
-    overflow: auto;
     position: relative;
+  }
+
+  #about-dashboard,
+  #contact-dashboard,
+  #projects-dashboard,
+  #resume-dashboard {
+    overflow: auto;
+    max-height: 410px;
   }
 
 }
