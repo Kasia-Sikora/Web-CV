@@ -19,7 +19,7 @@
 
 #download{
   height: auto;
-  box-shadow: 1px 1px 8px 1px inset olivedrab;
+  box-shadow: 1px 1px 8px 1px inset #999797;
   margin: 30px;
   width: 40%;
   padding: 8px;

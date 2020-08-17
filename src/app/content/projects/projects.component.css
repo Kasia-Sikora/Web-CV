@@ -37,6 +37,10 @@ mat-card-header{
   align-items: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 
 
 

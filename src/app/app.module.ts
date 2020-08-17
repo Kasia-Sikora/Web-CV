@@ -15,6 +15,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import {ProjectDetailComponent} from './content/projects/projectDetail/project-detail.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import {MatButtonModule} from '@angular/material/button';
     ContactComponent,
     ProjectsComponent,
     ResumeComponent,
+    ProjectDetailComponent,
   ],
   imports: [
     BrowserModule,

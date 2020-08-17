@@ -1,13 +1,17 @@
 <div class="contentDisplay" id="resume">
-    <header>
-      <div class="title"><img src="/assets/menu/resume.png" alt="resume">Resume</div>
-<!--      <div class="resume-links">-->
-<!--        <button (click)="scroll('skills')">Skills</button>-->
-<!--        <button (click)="scroll('work-experience')">Work Experence</button>-->
-<!--        <button (click)="scroll('dalej')">Work Experence</button>-->
-<!--      </div>-->
-      <div class="line"></div>
-    </header>
+  <header>
+    <div class="title"><img src="/assets/menu/resume.png" alt="resume">Resume</div>
+          <div class="resume-links">
+            <button (click)="scroll('skills')">Skills</button>
+            <div class="ver-line"></div>
+            <button (click)="scroll('work-experience')">Work Experence</button>
+            <div class="ver-line"></div>
+            <button (click)="scroll('education')">Education</button>
+            <div class="ver-line"></div>
+            <button (click)="scroll('recommendation')">Recommendation</button>
+          </div>
+    <div class="line"></div>
+  </header>
   <div id="resume-dashboard">
     <h4 id="skills">Skills</h4>
     <div class="line"></div>
@@ -35,6 +39,25 @@
       </div>
     </div>
 
+    <h4 id="Tools">Dev Tools:</h4>
+    <div class="line"></div>
+    <div class="row">
+      <div class="col-6 col-s-6">
+        <ul>
+          <li>IntelliJ IDEA</li>
+          <li>WebStorm</li>
+          <li>PyCharm</li>
+        </ul>
+      </div>
+      <div class="col-6 col-s-6">
+        <ul>
+          <li>Visual Studio Code</li>
+          <li>GitHub</li>
+          <li>Postman</li>
+        </ul>
+      </div>
+    </div>
+
     <h4 id="work-experience">Work Experience</h4>
     <div class="line"></div>
     <mat-accordion>
@@ -50,7 +73,11 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
         <div class="line"></div>
-        <p>I'm visible because I am open</p>
+        <ul>
+          <li>Coordinating the work of people in various departments</li>
+          <li>Taking care of the welfare of fish in the aquarium department</li>
+          <li>Ordering goods for all departments in warehouse</li>
+        </ul>
       </mat-expansion-panel>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
@@ -63,7 +90,11 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
         <div class="line"></div>
-        <p>I'm visible because I am open</p>
+        <ul>
+          <li>Accepting deliveries with live goods (fish, birds, rodents, reptiles)</li>
+          <li>Taking care for the terrarium and aquarium department</li>
+          <li>Packing goods in stock</li>
+        </ul>
       </mat-expansion-panel>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
@@ -76,7 +107,11 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
         <div class="line"></div>
-        <p>I'm visible because I am open</p>
+        <ul>
+          <li>Preparing bouquets to order</li>
+          <li>Direct and telephone customer service</li>
+          <li>Taking care of the display of goods, order and cleanliness in the flower shop</li>
+        </ul>
       </mat-expansion-panel>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
@@ -89,7 +124,11 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
         <div class="line"></div>
-        <p>I'm visible because I am open</p>
+        <ul>
+          <li>Responsibility for the proper functioning and high level of gastronomic offer in the restaurant</li>
+          <li>Team management and motivating employees</li>
+          <li>Direct and telephone customer service</li>
+        </ul>
       </mat-expansion-panel>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
@@ -103,13 +142,17 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
         <div class="line"></div>
-        <p>I'm visible because I am open</p>
+        <ul>
+          <li>Direct and telephone customer service</li>
+          <li>Support for the cash register and payment card terminal</li>
+          <li>Taking care of order and cleanliness in the restaurant</li>
+        </ul>
       </mat-expansion-panel>
     </mat-accordion>
 
     <h4 id="education">Education</h4>
     <div class="line"></div>
-    <ul>
+    <ul id="education-list">
       <li>Full-Stack Developer (2019 - 2020) — Codecool</li>
       <li>Zootechnics (2008 - 2011) — Warsaw University of Life Sciences</li>
     </ul>
@@ -120,13 +163,15 @@
       every project she's involved in and doesn't give up when problems
       arrive. Kasia creates a great work atmosphere, and it's always a pleasure
       to work with her. I think she'd be a great asset to every team.”
-      </blockquote><span class="author"> - Vitalij Kokhanau</span>
-<br>
+    </blockquote>
+    <span class="author"> - Vitalij Kokhanau</span>
+    <br>
     <blockquote>“Katarzyna is quite an independent programmer who relies mostly on
       herself to solve her problems. Not afraid to ask for help, but she'll first try
       and finish the task herself. She works well within groups, other people
       like working with her, because she is a fun person to be around and can
       contribute to any task at hand.”
-      </blockquote><span class="author"> - Adam Panasiuk</span>
+    </blockquote>
+    <span class="author"> - Adam Panasiuk</span>
   </div>
 </div>
