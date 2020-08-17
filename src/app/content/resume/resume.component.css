@@ -109,6 +109,25 @@ h4{
   }
 }
 
+@media only screen and (max-width: 670px) {
+  button{
+    font-size: 70%;
+  }
+
+  header{
+    position: sticky;
+    top: 95px;
+  }
+
+  blockquote{
+    margin: 10px 0;
+  }
+
+  .resume-links{
+    flex-wrap: wrap;
+  }
+}
+
 
 
 
