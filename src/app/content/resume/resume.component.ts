@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
+import {BehaviorSubject} from 'rxjs';
+import {WindowSizeService} from '../../window-size.service';
 
 @Component({
   selector: 'app-resume',
@@ -6,14 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resume.component.css']
 })
 export class ResumeComponent implements OnInit {
-  panelOpenState: boolean;
 
-  constructor() { }
+  constructor(private windowSizeService: WindowSizeService) {
+  }
 
   ngOnInit(): void {
+    // document.getElementById('skills').scrollIntoView({behavior: 'smooth', block: 'start'});
+    if (this.windowSizeService.getDevice() === 'mobile') {
+      window.scroll(0, 480);
+    } else {
+      window.scroll(0, 590);
+    }
   }
 
   scroll(s: string) {
-    const d = document.getElementById(s).scrollIntoView({ behavior: 'smooth', block: 'start'});
+    document.getElementById(s).scrollIntoView({behavior: 'smooth', block: 'start'});
   }
 }

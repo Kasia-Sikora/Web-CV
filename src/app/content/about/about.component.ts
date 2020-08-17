@@ -1,4 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
+import {BehaviorSubject} from 'rxjs';
+import {WindowSizeService} from '../../window-size.service';
 
 @Component({
   templateUrl: './about.component.html',
@@ -6,13 +8,16 @@ import {Component, OnInit} from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  isVisible: boolean;
-
-  constructor() {
+  constructor(private windowSizeService: WindowSizeService) {
   }
 
   ngOnInit(): void {
-    this.isVisible = true;
+    // document.getElementById('about').scrollIntoView({behavior: 'smooth', block: 'start'});
+    if (this.windowSizeService.getDevice() === 'mobile') {
+      window.scroll(0, 480);
+    } else {
+      window.scroll(0, 590);
+    }
   }
 
 }

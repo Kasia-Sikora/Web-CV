@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 
 import 'ol/ol.css';
 import Map from 'ol/Map';
@@ -9,6 +9,8 @@ import Icon from 'ol/style/Icon';
 import OSM from 'ol/source/OSM';
 import * as olProj from 'ol/proj';
 import TileLayer from 'ol/layer/Tile';
+import {BehaviorSubject} from 'rxjs';
+import {WindowSizeService} from '../../window-size.service';
 
 
 @Component({
@@ -20,10 +22,16 @@ export class ContactComponent implements OnInit {
 
   map: Map;
 
-  constructor() {
+  constructor(private windowSizeService: WindowSizeService) {
   }
 
   ngOnInit(): void {
+    // document.getElementById('contact').scrollIntoView({behavior: 'smooth', block: 'start'});
+    if (this.windowSizeService.getDevice() === 'mobile') {
+      window.scroll(0, 480);
+    } else {
+      window.scroll(0, 590);
+    }
     this.map = new Map({
       layers: [
         new TileLayer({
@@ -39,7 +47,6 @@ export class ContactComponent implements OnInit {
 
     const z = document.getElementsByTagName('ul')[0];
     z.setAttribute('style', 'position: absolute; bottom: 0; right: 0');
-    console.log(z);
   }
 
 }

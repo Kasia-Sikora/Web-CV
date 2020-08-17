@@ -12,22 +12,27 @@
   height: 300px;
 }
 
-ul{
-  position: absolute !important;
-  bottom: 0 !important;
+#contact-dashboard{
+  display: grid;
 }
 
-.map .ol-attribution,
-.map .ol-attribution.ol-uncollapsible {
-  bottom: 30px;
-  right: 50px;
+.contentDisplay{
+  height: 503px;
 }
 
+.col-5,
+.col-s-5{
+  font-size: 0.8rem;
+}
 
+#phone{
+  float: right;
+}
 
-
-
-
+img {
+  width: 27px;
+  float: right;
+}
 
 
 

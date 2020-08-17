@@ -14,7 +14,6 @@ export class PersonalComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
   }
 
   downloadPdf() {

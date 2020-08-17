@@ -37,7 +37,15 @@ mat-card-header{
   align-items: center;
 }
 
+a {
+  text-decoration: none;
+}
 
+@media only screen and (max-width: 300px) {
+  .mat-card{
+    width: 200px;
+  }
+}
 
 
 

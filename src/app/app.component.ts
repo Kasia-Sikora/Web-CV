@@ -1,6 +1,7 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {slideInAnimation} from './animations';
+import {WindowSizeService} from './window-size.service';
 
 @Component({
   selector: 'app-root',
@@ -12,25 +13,22 @@ export class AppComponent implements OnInit {
 
   title = 'CV';
 
-  public innerWidth: any;
-
-  @HostListener('window:resize', ['$event'])
-  onResize(event) {
-    this.innerWidth = window.innerWidth;
-    console.log(this.innerWidth);
+  constructor(private windowService: WindowSizeService) {
   }
 
   ngOnInit() {
-    this.innerWidth = window.innerWidth;
-  }
-
-  constructor() {
   }
 
   prepareRoute(outlet: RouterOutlet) {
     return outlet.activatedRouteData && outlet.activatedRouteData['animation'];
   }
 
-
-
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    if (window.innerWidth <= 670) {
+      this.windowService.setDevice('mobile');
+    }else if (window.innerWidth > 670){
+      this.windowService.setDevice('tablet');
+    }
+  }
 }
