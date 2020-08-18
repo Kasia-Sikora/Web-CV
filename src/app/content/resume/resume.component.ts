@@ -22,6 +22,10 @@ export class ResumeComponent implements OnInit {
   }
 
   scroll(s: string) {
-    document.getElementById(s).scrollIntoView({behavior: 'smooth', block: 'start'});
+    if (this.windowSizeService.getDevice() !== 'desktop') {
+      document.getElementById(s).scrollIntoView({behavior: 'smooth', block: 'center'});
+    }else{
+      document.getElementById(s).scrollIntoView({behavior: 'smooth', block: 'start'});
+    }
   }
 }

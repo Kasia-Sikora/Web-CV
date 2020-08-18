@@ -27,8 +27,10 @@ export class AppComponent implements OnInit {
   onResize(event) {
     if (window.innerWidth <= 670) {
       this.windowService.setDevice('mobile');
-    }else if (window.innerWidth > 670){
+    }else if (window.innerWidth > 670 && window.innerWidth < 1130){
       this.windowService.setDevice('tablet');
+    }else{
+      this.windowService.setDevice('desktop');
     }
   }
 }
