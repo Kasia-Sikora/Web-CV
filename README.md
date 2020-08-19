@@ -16,11 +16,13 @@ The website can be viewed here: [Curriculum Vitae](http://sikorakatarzyna.pl)
       <li>Design pleasing to the eye</li>
   </ul>
     
+    
    <li>Practice basic knowledge about angular:</li>
     <ul>
       <li>Page build in SPA (Single Page Application)</li>
       <li>Animations</li>
     </ul>
+
 
    <li>Server support:</li>
     <ul>
