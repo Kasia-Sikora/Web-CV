@@ -1,28 +1,31 @@
-# CV
+<h21> CV </h1>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
-## Development server
+The project was created in order to deepen knowledge in CSS and HTML.
+The main assumption was to create a CV page that would contain all the necessary information about me. I think this is a more convenient and more enjoyable way to view a resume than raw PDF.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The website can be viewed here: [Curriculum Vitae](https://sikorakatarzyna.pl)
 
-## Code scaffolding
+<h2>My goals:</h2>
+<ul>
+  <li>Expanding knowledge in the field of CSS and HTML:</li>
+    <ul>
+      <li>RWD</li>
+      <li>User Friendly interface</li>
+      <li>Design pleasing to the eye</li>
+  </ul>
+    
+   <li>Practice basic knowledge about angular:</li>
+    <ul>
+      <li>Page build in SPA (Single Page Application)</li>
+      <li>Animations</li>
+    </ul>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+   <li>Server support:</li>
+    <ul>
+      <li>Hosting a website on a private server</li>
+    </ul>
+</ul>
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-# Web-CV
+<img src="https://raw.githubusercontent.com/Kasia-Sikora/Web-CV/master/src/assets/Screenshot.jpg" width="75%" height="75%">
