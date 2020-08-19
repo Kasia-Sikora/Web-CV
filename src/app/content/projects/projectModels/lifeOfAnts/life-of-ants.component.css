@@ -28,3 +28,14 @@ a:hover {
 ul {
   font-size: 0.9rem;
 }
+
+
+header > .line {
+  width: 100%;
+}
+
+
+.line {
+  width: 40%;
+  margin-top: 0;
+}
