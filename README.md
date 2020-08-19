@@ -1,11 +1,11 @@
-<h21> CV </h1>
+<h1> CV </h1>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
 The project was created in order to deepen knowledge in CSS and HTML.
 The main assumption was to create a CV page that would contain all the necessary information about me. I think this is a more convenient and more enjoyable way to view a resume than raw PDF.
 
-The website can be viewed here: [Curriculum Vitae](https://sikorakatarzyna.pl)
+The website can be viewed here: [Curriculum Vitae](http://sikorakatarzyna.pl)
 
 <h2>My goals:</h2>
 <ul>
