@@ -9,4 +9,8 @@ export class ApiWarsComponent {
 
   constructor() {
   }
+
+  goToLink(url: string) {
+    window.open(url, '_blank');
+  }
 }

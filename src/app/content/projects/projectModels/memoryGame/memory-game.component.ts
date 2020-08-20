@@ -9,4 +9,8 @@ export class MemoryGameComponent {
 
   constructor() {
   }
+
+  goToLink(url: string) {
+    window.open(url, '_blank');
+  }
 }
