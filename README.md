@@ -30,4 +30,4 @@ The website can be viewed here: [Curriculum Vitae](http://sikorakatarzyna.pl)
     </ul>
 </ul>
 
-<img src="https://raw.githubusercontent.com/Kasia-Sikora/Web-CV/master/src/assets/Screenshot.jpg" width="75%" height="75%">
+<img src="https://raw.githubusercontent.com/Kasia-Sikora/Web-CV/master/src/assets/Screenshot.png" width="75%" height="75%">
