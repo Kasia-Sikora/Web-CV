@@ -37,6 +37,16 @@
   margin-top: 0;
 }
 
+button>.image,
+button:hover>.image-hover{
+  display: block;
+}
+
+button:hover>.image,
+button>.image-hover{
+  display: none;
+}
+
 img {
   width: 27px;
   margin-left: auto;
@@ -58,9 +68,9 @@ button {
   min-width: 65px;
 }
 
-button:focus{
-/*  color: #58712e;*/
-/*  text-shadow: olive;*/
+button:focus,
+button:hover{
+  color: #8cb165;
 }
 
 .line {

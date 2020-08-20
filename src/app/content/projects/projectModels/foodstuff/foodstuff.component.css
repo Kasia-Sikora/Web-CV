@@ -1,36 +1,15 @@
-button {
-  float: right;
-  height: auto;
-  /*padding: 8px;*/
-  box-shadow: 1px 1px 2px 1px #999797;
-  border-radius: 1px;
-  background-color: #404345;
-  text-align: center;
-  border: none;
-  color: white;
-  font-size: 0.8rem;
-}
-
-#projects-detail-dashboard {
-  padding: 20px;
-  display: grid;
-  font-size: 0.9rem;
-}
-
-
 img {
   width: 80%;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  float: none;
 }
 
-footer > .line,
 header > .line {
   width: 100%;
 }
-
 
 .line {
   width: 40%;

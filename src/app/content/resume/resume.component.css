@@ -12,6 +12,15 @@ button{
   color: white;
   border: none;
 }
+
+button:hover{
+  color: #8cb165;
+}
+
+button:focus{
+  font-weight: bold;
+}
+
 .author{
   font-style: unset;
   float: right;
