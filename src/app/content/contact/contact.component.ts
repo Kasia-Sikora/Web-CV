@@ -1,4 +1,4 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 import 'ol/ol.css';
 import Map from 'ol/Map';
@@ -9,8 +9,13 @@ import Icon from 'ol/style/Icon';
 import OSM from 'ol/source/OSM';
 import * as olProj from 'ol/proj';
 import TileLayer from 'ol/layer/Tile';
-import {BehaviorSubject} from 'rxjs';
 import {WindowSizeService} from '../../window-size.service';
+import {icon} from '@fortawesome/fontawesome-svg-core';
+import VectorSource from 'ol/source/Vector';
+import {Geometry} from 'ol/geom';
+import Feature from 'ol/Feature';
+import Point from 'ol/geom/Point';
+import {transform} from 'ol/proj';
 
 
 @Component({
@@ -26,7 +31,6 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // document.getElementById('contact').scrollIntoView({behavior: 'smooth', block: 'start'});
     if (this.windowSizeService.getDevice() === 'mobile') {
       window.scroll(0, 480);
     } else {
@@ -41,9 +45,25 @@ export class ContactComponent implements OnInit {
       target: 'map',
       view: new View({
         center: olProj.fromLonLat([20.9796975, 52.2675944]),
-        zoom: 14
+        zoom: 14,
       })
     });
+
+    const iconLayer = new VectorLayer({
+      source: new VectorSource<Geometry>({
+        features: [new Feature<Geometry>({
+          geometry: new Point(transform([20.9796975, 52.2675944], 'EPSG:4326', 'EPSG:3857'))
+        })]
+      }),
+      style: new Style({
+        image: new Icon({
+          src: 'https://upload.wikimedia.org/wikipedia/commons/f/f2/678111-map-marker-512.png',
+          anchor: [0.5, 1],
+          scale: 0.05
+        })
+      })
+    });
+    this.map.addLayer(iconLayer);
 
     const z = document.getElementsByTagName('ul')[0];
     z.setAttribute('style', 'position: absolute; bottom: 0; right: 0');
