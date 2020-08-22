@@ -38,6 +38,7 @@
   box-shadow: 20px 10px 70px rgba(64, 67, 69, 0) inset;
   border-radius: 1%;
   position: relative;
+  margin-bottom: 5px;
 }
 
 #photo {

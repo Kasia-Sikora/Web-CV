@@ -22,6 +22,10 @@ import {LifeOfAntsComponent} from './content/projects/projectModels/lifeOfAnts/l
 import {MemoryGameComponent} from './content/projects/projectModels/memoryGame/memory-game.component';
 import {ApiWarsComponent} from './content/projects/projectModels/apiWars/api-wars.component';
 import {ArkanoidComponent} from './content/projects/projectModels/arkanoid/arkanoid.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -48,6 +52,11 @@ import {ArkanoidComponent} from './content/projects/projectModels/arkanoid/arkan
     FontAwesomeModule,
     MatCardModule,
     MatButtonModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
