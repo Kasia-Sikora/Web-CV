@@ -63,7 +63,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 9px;
+  font-size: 0.7rem;
   margin: 5px 0;
   min-width: 65px;
 }
