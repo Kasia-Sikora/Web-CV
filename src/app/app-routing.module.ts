@@ -8,7 +8,7 @@ import {ProjectDetailComponent} from './content/projects/projectDetail/project-d
 
 
 const routes: Routes = [
-  {path: '', component: AboutComponent, data: {animation: 'About'}},
+  {path: '', pathMatch: 'full', component: AboutComponent, data: {animation: 'About'}},
   {path: 'resume', component: ResumeComponent, data: {animation: 'Resume'}},
   {path: 'projects', component: ProjectsComponent, data: {animation: 'Project'}},
   {path: 'projects/:name', component: ProjectDetailComponent},
