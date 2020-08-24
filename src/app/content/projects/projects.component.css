@@ -8,7 +8,7 @@
 /*}*/
 
 mat-card {
-  height: 240px;
+  height: 280px;
   margin: 5px;
   background-color: #999797;
   box-shadow: 2px 2px 2px  inset white !important;
@@ -52,7 +52,11 @@ a {
   }
 }
 
-
+/*@media only screen and (max-width: 1130px){*/
+/*  mat-card {*/
+/*    height: 280px;*/
+/*  }*/
+/*}*/
 
 
 

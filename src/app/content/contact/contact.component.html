@@ -1,39 +1,50 @@
 <div class="contentDisplay" id="contact">
-    <header>
-      <div class="title"><img src="/assets/menu/contact.png" alt="contact">Contact</div>
-      <div class="line"></div>
-    </header>
+  <header>
+    <div class="title"><img src="/assets/menu/contact.png" alt="contact">Contact</div>
+    <div class="line"></div>
+  </header>
   <div id="contact-dashboard">
 
     <div id="map"></div>
-      <h3>Contact form: </h3>
-      <div class="line"></div>
-      <div class="row">
-        <form [formGroup]="contactForm" (ngSubmit)="onSubmit();">
+    <h4>Contact form: </h4>
+    <div class="line"></div>
+    <div class="row">
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit();">
         <mat-form-field appearance="fill">
           <mat-label>Full Name</mat-label>
           <input matInput formControlName="name">
         </mat-form-field>
         <br>
-          <mat-form-field appearance="fill">
-            <mat-label>E-mail</mat-label>
-            <input matInput formControlName="email">
-          </mat-form-field>
-          <br>
+        <mat-form-field appearance="fill">
+          <mat-label>E-mail</mat-label>
+          <input matInput formControlName="email">
+        </mat-form-field>
+        <br>
         <mat-form-field appearance="fill">
           <mat-label>Subject</mat-label>
           <input matInput formControlName="subject">
         </mat-form-field>
         <br>
-          <mat-form-field appearance="fill">
-            <mat-label>Message</mat-label>
-            <textarea matInput formControlName="message" rows="5" cols="30"></textarea>
-          </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Message</mat-label>
+          <textarea matInput formControlName="message" rows="5" cols="30"></textarea>
+        </mat-form-field>
 
-          <div class="form-group">
-            <button class="btn btn-success btn-block btn-lg">Send</button>
-          </div>
-        </form>
+        <div class="form-group">
+          <button class="btn btn-success btn-block btn-lg">Send</button>
+        </div>
+      </form>
+    </div>
+    <div class="line"></div>
+    <div class="row">
+      <div class="col-5 col-s-5">
+        <h4>e-mail:</h4>
+        sikora.katarzyna.waw@gmail.com
+      </div>
+      <div class="col-5 col-s-5" id="phone">
+        <h4>tel:</h4>
+        503-954-421
       </div>
     </div>
+  </div>
 </div>
