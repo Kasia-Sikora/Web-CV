@@ -1,0 +1,29 @@
+#content{
+  position: relative;
+}
+
+/*For Tablets*/
+@media only screen and (min-width: 670px) {
+  .container{
+    max-width: 700px;
+  }
+}
+
+/* For desktop: */
+@media only screen and (min-width: 1130px) {
+
+  .container{
+    position: absolute;
+    width: 100%;
+    max-width: 1150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: unset;
+    margin: unset;
+  }
+
+  #content{
+    margin-top: 10px;
+  }
+}

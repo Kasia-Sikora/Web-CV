@@ -3,7 +3,7 @@ import {Component} from '@angular/core';
 @Component({
   selector: 'app-api-wars',
   templateUrl: './api-wars.component.html',
-  styleUrls: ['./api-wars.component.css']
+  styleUrls: ['./api-wars.component.scss']
 })
 export class ApiWarsComponent {
 

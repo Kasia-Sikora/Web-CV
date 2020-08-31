@@ -1,0 +1,99 @@
+@import "../../custom-style";
+
+
+button > .image,
+button:hover > .image-hover {
+  display: block;
+}
+
+button:hover > .image,
+button > .image-hover {
+  display: none;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 0.7rem;
+}
+
+button:focus {
+  color: #8cb165;
+}
+
+.line {
+  @include vertical-line;
+  background: linear-gradient(to top, rgba(45, 46, 49, 0.5) 20%, #FFFFFFFF);
+}
+
+#menuContent {
+  position: fixed;
+  width: 100%;
+  background-color: #404345;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  box-shadow: 20px 10px 70px #1f2121 inset;
+
+  #name-bar {
+    .line {
+      @include tree-colour-line;
+    }
+
+    .picture-block {
+      margin: 5px 0 0 5px;
+      padding: 5px;
+      height: 40px;
+
+      #photo {
+        width: 35px;
+        margin: -5px 10px 5px 5px;
+        float: left;
+      }
+    }
+  }
+
+  #menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+  }
+}
+
+@media only screen and (min-width: 670px) {
+
+  #menuContent {
+    position: fixed;
+    top: 10vh;
+    right: unset;
+    margin-left: 20px;
+    width: 70px;
+    border-radius: $border-radius;
+
+    #name-bar {
+      display: none;
+    }
+
+    #menu {
+      display: flex;
+      flex-direction: column;
+      height: 300px;
+
+      .line {
+        @include two-colour-line;
+        background: linear-gradient(to right, rgba(45, 46, 49, 0.5) 10%, #FFFFFFFF);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1130px) {
+
+  #menuContent {
+    margin-left: 15px;
+    top: 50%;
+    position: absolute;
+    transform: translate(0, -50%);
+    border-radius: $border-radius;
+  }
+}

@@ -6,7 +6,7 @@ const FileSaver = require('file-saver');
 @Component({
   selector: 'app-personal',
   templateUrl: './personal.component.html',
-  styleUrls: ['./personal.component.css']
+  styleUrls: ['./personal.component.scss']
 })
 export class PersonalComponent implements OnInit {
 

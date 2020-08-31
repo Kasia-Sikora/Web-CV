@@ -1,10 +1,9 @@
-import {Component, HostListener, OnInit} from '@angular/core';
-import {BehaviorSubject} from 'rxjs';
+import {Component, OnInit} from '@angular/core';
 import {WindowSizeService} from '../../window-size.service';
 
 @Component({
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css'],
+  styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent implements OnInit {
 
@@ -12,7 +11,6 @@ export class AboutComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // document.getElementById('about').scrollIntoView({behavior: 'smooth', block: 'start'});
     if (this.windowSizeService.getDevice() === 'mobile') {
       window.scroll(0, 480);
     } else {

@@ -23,16 +23,15 @@ declare let Email: any;
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
 
   map: Map;
-  private model: any;
   contactForm = this.fb.group({
     name: ['', Validators.required],
     subject: ['', [Validators.required]],
-    email: ['', [Validators.required]],
+    email: ['', [Validators.required, Validators.email]],
     message: ['', Validators.required],
 
   });
@@ -41,11 +40,24 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.scrollWindow();
+    this.setMap();
+  }
+
+  onSubmit() {
+    this.confirmationEmail();
+    this.sentFeedbackFromGuest();
+  }
+
+  private scrollWindow() {
     if (this.windowSizeService.getDevice() === 'mobile') {
       window.scroll(0, 480);
     } else {
       window.scroll(0, 590);
     }
+  }
+
+  private setMap() {
     this.map = new Map({
       layers: [
         new TileLayer({
@@ -59,7 +71,7 @@ export class ContactComponent implements OnInit {
       })
     });
 
-    const iconLayer = new VectorLayer({
+    const mapMarker = new VectorLayer({
       source: new VectorSource<Geometry>({
         features: [new Feature<Geometry>({
           geometry: new Point(transform([20.9796975, 52.2675944], 'EPSG:4326', 'EPSG:3857'))
@@ -73,30 +85,13 @@ export class ContactComponent implements OnInit {
         })
       })
     });
-    this.map.addLayer(iconLayer);
+    this.map.addLayer(mapMarker);
 
-    const z = document.getElementsByTagName('ul')[0];
-    z.setAttribute('style', 'position: absolute; bottom: 0; right: 0');
+    const openLayerLink = document.getElementsByTagName('ul')[0];
+    openLayerLink.setAttribute('style', 'position: absolute; bottom: 0; right: 0');
   }
 
-  onSubmit() {
-
-    Email.send({
-      Host: environment.Host,
-      Username: environment.Username,
-      Password: environment.Password,
-      To: 'sikora.katarzyna.waw@gmail.com',
-      From: this.contactForm.get('email').value,
-      Subject: this.contactForm.get('subject').value,
-      Body: `
-        <i>This is sent as a feedback from my resume page.</i> <br/> <b>Name: ${this.contactForm.get('name').value}</b> ` +
-        `<br /> <b>Email: ${this.contactForm.get('email').value}</b><br /> <b>Subject: ${this.contactForm.get('subject').value}</b><br />`
-        + `<b>Message:</b> <br /> ${this.contactForm.get('message').value}<br /><br>`
-    }).then(message => {
-      alert(message);
-      this.contactForm.reset();
-    });
-
+  private confirmationEmail() {
     Email.send({
       Host: environment.Host,
       Username: environment.Username,
@@ -112,7 +107,23 @@ export class ContactComponent implements OnInit {
       alert(message);
       this.contactForm.reset();
     });
-
   }
 
+  private sentFeedbackFromGuest() {
+    Email.send({
+      Host: environment.Host,
+      Username: environment.Username,
+      Password: environment.Password,
+      To: 'sikora.katarzyna.waw@gmail.com',
+      From: this.contactForm.get('email').value,
+      Subject: this.contactForm.get('subject').value,
+      Body: `
+        <i>This is sent as a feedback from my resume page.</i> <br/> <b>Name: ${this.contactForm.get('name').value}</b> ` +
+        `<br /> <b>Email: ${this.contactForm.get('email').value}</b><br /> <b>Subject: ${this.contactForm.get('subject').value}</b><br />`
+        + `<b>Message:</b> <br /> ${this.contactForm.get('message').value}<br /><br>`
+    }).then(message => {
+      alert(message);
+      this.contactForm.reset();
+    });
+  }
 }

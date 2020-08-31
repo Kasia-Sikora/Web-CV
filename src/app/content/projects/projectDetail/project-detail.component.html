@@ -1,11 +1,11 @@
-<div class="contentDisplay" id="projects">
+<div class="contentDisplay">
   <header>
     <div class="title">{{$project.getValue()}}
       <button (click)='onBack()'>Back</button>
     </div>
     <div class="line"></div>
   </header>
-  <div id="projects-detail-dashboard">
+  <div class="content-dashboard">
     <ng-template [ngIf]="($project | async) == 'FoodStuff'">
       <app-foodstuff></app-foodstuff>
     </ng-template>
