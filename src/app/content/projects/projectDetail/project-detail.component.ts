@@ -5,7 +5,7 @@ import {BehaviorSubject} from 'rxjs';
 @Component({
   selector: 'app-project-detail',
   templateUrl: './project-detail.component.html',
-  styleUrls: ['./project-detail.component.css']
+  styleUrls: ['./project-detail.component.scss']
 })
 export class ProjectDetailComponent implements OnInit {
 
@@ -18,7 +18,6 @@ export class ProjectDetailComponent implements OnInit {
     const param = this.route.snapshot.paramMap.get('name');
     if (param) {
       this.$project.next(param);
-      console.log(this.$project.getValue());
     }
   }
 
