@@ -11,7 +11,8 @@ header {
 
 button {
   background-color: rgba(64, 67, 69, 0);
-  &:focus{
+
+  &:focus {
     font-weight: bold;
   }
 }
@@ -19,7 +20,8 @@ button {
 blockquote {
   font-style: italic;
   font-size: 0.9rem;
-  ~ span{
+
+  ~ span {
     font-style: unset;
     float: right;
   }
@@ -28,10 +30,16 @@ blockquote {
 ul {
   font-size: 0.9rem;
   list-style-type: circle;
-  &::first-line{
+
+  &.skills::first-line{
     font-weight: bold;
     font-size: 0.9rem;
   }
+}
+
+
+p {
+  margin: 0 0 2% 0;
 }
 
 .line {
@@ -50,15 +58,22 @@ ul {
   padding: 10px 5px;
 }
 
+.mat-expansion-panel-header {
+  height: auto !important;
+  padding: 0 2% !important;
+}
+
 .mat-expansion-panel,
 .mat-expansion-panel-header-title,
 .mat-expansion-panel-header-description, {
   color: white;
 }
+
 .mat-expansion-panel-content,
-.mat-expansion-panel-header-description{
+.mat-expansion-panel-header-description {
   @include lists;
 }
+
 .mat-expansion-panel {
   & ul {
     @include lists;
@@ -76,7 +91,7 @@ ul {
   align-items: center;
 }
 
-//Tablet
+//Mobile
 @media only screen and (max-width: 670px) {
   button {
     font-size: 70%;
@@ -91,8 +106,8 @@ ul {
   }
 }
 
-//Desktop
-@media only screen and (max-width: 1130px) {
+//Tablet
+@media only screen and (max-width: 1129px) {
   header {
     top: 0;
     background-color: rgb(64, 67, 69);
@@ -102,4 +117,18 @@ ul {
   .contentDisplay {
     box-shadow: none;
   }
+}
+
+@media only screen and (min-width: 1130px) {
+  .content-dashboard {
+    max-height: 420px;
+  }
+}
+
+
+@media (hover: none) {
+  .mat-expansion-panel:not(.mat-expanded):not([aria-disabled=true]) .mat-expansion-panel-header:hover{
+    background-color: unset;
+  }
+
 }
