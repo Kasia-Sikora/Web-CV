@@ -26,6 +26,12 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {FrontendProjectDetailComponent} from "./content/projects/frontendMentorProject/frontendMentorProjectsDetail/frontend-project-detail.component";
+import {FrontendProjectComponent} from "./content/projects/frontendMentorProject/frontend-project.component";
+import {SocialProofComponent} from "./content/projects/projectModels/socialProof/social-proof.component";
+import {TestimonialGridComponent} from "./content/projects/projectModels/testimonialGrid/testimonial-grid.component";
+import {RockPaperScissorsComponent} from "./content/projects/projectModels/rockPaperScissors/rock-paper-scissors.component";
+import {RoomHomepageComponent} from "./content/projects/projectModels/roomHomepage/room-homepage.component";
 
 @NgModule({
   declarations: [
@@ -43,6 +49,12 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     MemoryGameComponent,
     ApiWarsComponent,
     ArkanoidComponent,
+    FrontendProjectComponent,
+    FrontendProjectDetailComponent,
+    TestimonialGridComponent,
+    SocialProofComponent,
+    RoomHomepageComponent,
+    RockPaperScissorsComponent
   ],
   imports: [
     BrowserModule,

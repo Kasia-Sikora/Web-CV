@@ -1,0 +1,76 @@
+<div class="contentDisplay">
+  <header>
+    <div class="title">Frontend Challenges
+      <button (click)='onBack()'>Back</button>
+    </div>
+    <div class="line"></div>
+  </header>
+  <div class="content-dashboard">
+    <div class="row">
+      <div class="col-6 col-s-6">
+        <a [routerLink]="['/frontend-challenges', 'Rock Paper Scissors']">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>Rock Paper Scissors Game</mat-card-title>
+              <mat-card-subtitle>HTML + SCSS + JS</mat-card-subtitle>
+              <mat-card-subtitle>[Nov 2020]</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image
+                 class="big-img"
+                 src="https://raw.githubusercontent.com/Kasia-Sikora/FA-Rock-Paper-Scissors/main/src/images/Screenshot.png"
+                 alt="Rock Paper Scissors game photo">
+          </mat-card>
+        </a>
+      </div>
+      <div class="col-6 col-s-6">
+        <a [routerLink]="['/frontend-challenges', 'Testimonial Grid']">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>Testimonial Grid Section</mat-card-title>
+              <mat-card-subtitle>HTML + CSS</mat-card-subtitle>
+              <mat-card-subtitle>[Nov 2020]</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image
+                 class="big-img"
+                 src="https://raw.githubusercontent.com/Kasia-Sikora/FA-TestimonialGrid/main/src/assets/Screenshot.png"
+                 alt="Testimonial Grid Photo">
+          </mat-card>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 col-s-6">
+        <a [routerLink]="['/frontend-challenges', 'Room Homepage']">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>Room Homepage</mat-card-title>
+              <mat-card-subtitle>HTML + SCSS + JS</mat-card-subtitle>
+              <mat-card-subtitle>[Nov 2020]</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image
+                 src="https://raw.githubusercontent.com/Kasia-Sikora/FA-room-homepage/main/src/static/images/Screenshot.png?token=AMREBIHQXC6J77AZLHE6OEK72O634"
+                 alt="Room Homepage  Photo">
+          </mat-card>
+        </a>
+      </div>
+      <div class="col-6 col-s-6">
+        <a [routerLink]="['/frontend-challenges', 'Social Proof']">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>Social Proof</mat-card-title>
+              <mat-card-subtitle>HTML + SCSS</mat-card-subtitle>
+              <mat-card-subtitle>[Nov 2020]</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image
+                 src="https://raw.githubusercontent.com/Kasia-Sikora/FA-social-proof/main/assets/Screenshot.png"
+                 alt="Social Proof photo">
+          </mat-card>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <footer>
+    <div class="line"></div>
+  </footer>
+</div>

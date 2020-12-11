@@ -1,0 +1,21 @@
+@import "../../../../../custom-style";
+
+img {
+  @include project-image;
+}
+
+footer, header {
+  .line{
+    @include two-colour-line;
+  }
+}
+
+button {
+  float: right;
+  box-shadow: 1px 1px 2px inset #999797;
+  border-radius: $border-radius - 3px;
+}
+
+.content-dashboard {
+  padding: 20px;
+}

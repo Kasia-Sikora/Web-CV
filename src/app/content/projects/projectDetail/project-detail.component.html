@@ -24,6 +24,9 @@
     <ng-template [ngIf]="($project | async) == 'CV'">
       <app-cv></app-cv>
     </ng-template>
+    <ng-template [ngIf]="($project | async) == 'Frontend Mentor'">
+      <app-front-mentor></app-front-mentor>
+    </ng-template>
   </div>
   <footer>
     <div class="line"></div>
