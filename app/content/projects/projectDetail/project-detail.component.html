@@ -1,0 +1,34 @@
+<div class="contentDisplay">
+  <header>
+    <div class="title">{{$project.getValue()}}
+      <button (click)='onBack()'>Back</button>
+    </div>
+    <div class="line"></div>
+  </header>
+  <div class="content-dashboard">
+    <ng-template [ngIf]="($project | async) == 'FoodStuff'">
+      <app-foodstuff></app-foodstuff>
+    </ng-template>
+    <ng-template [ngIf]="($project | async) == 'Arkanoid'">
+      <app-arkanoid></app-arkanoid>
+    </ng-template>
+    <ng-template [ngIf]="($project | async) == 'API wars'">
+      <app-api-wars></app-api-wars>
+    </ng-template>
+    <ng-template [ngIf]="($project | async) == 'Life of Ants'">
+     <app-life-of-ants></app-life-of-ants>
+    </ng-template>
+    <ng-template [ngIf]="($project | async) == 'Memory Game'">
+     <app-memory-game></app-memory-game>
+    </ng-template>
+    <ng-template [ngIf]="($project | async) == 'CV'">
+      <app-cv></app-cv>
+    </ng-template>
+    <ng-template [ngIf]="($project | async) == 'Frontend Mentor'">
+      <app-front-mentor></app-front-mentor>
+    </ng-template>
+  </div>
+  <footer>
+    <div class="line"></div>
+  </footer>
+</div>

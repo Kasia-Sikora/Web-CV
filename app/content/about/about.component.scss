@@ -1,0 +1,12 @@
+@import "../../../custom-style";
+
+.line {
+  @include two-colour-line;
+  width: 40%;
+}
+
+header{
+  .line{
+    width: 100%;
+  }
+}
