@@ -1,0 +1,25 @@
+<div class="contentDisplay">
+  <header>
+    <div class="title">{{$project.getValue()}}
+      <button (click)='onBack()'>Back</button>
+    </div>
+    <div class="line"></div>
+  </header>
+  <div class="content-dashboard">
+    <ng-template [ngIf]="($project | async) == 'Rock Paper Scissors'">
+      <app-rock-paper-scissors></app-rock-paper-scissors>
+    </ng-template>
+    <ng-template [ngIf]="($project | async) == 'Room Homepage'">
+      <app-room-homepage></app-room-homepage>
+    </ng-template>
+    <ng-template [ngIf]="($project | async) == 'Social Proof'">
+      <app-social-proof></app-social-proof>
+    </ng-template>
+    <ng-template [ngIf]="($project | async) == 'Testimonial Grid'">
+      <app-testimonial-grid></app-testimonial-grid>
+    </ng-template>
+  </div>
+  <footer>
+    <div class="line"></div>
+  </footer>
+</div>
