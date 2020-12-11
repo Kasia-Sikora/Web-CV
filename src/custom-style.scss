@@ -1,0 +1,71 @@
+$font-size-base: 16px;
+$hover-button-color: #8cb165;
+$border-radius: 6px;
+
+@mixin line{
+  width: 100%;
+  height: 1px;
+}
+
+@mixin two-colour-line {
+  @include line;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(64, 67, 69, 0) 100%);
+  margin: 0;
+}
+
+@mixin tree-colour-line{
+  @include line;
+  background: linear-gradient(to right, #404345, #FFFFFFFF, #404345);
+  margin-bottom: 0;
+}
+
+
+@mixin vertical-line{
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(#FFFFFFFF, #404345);
+    align-self: flex-end;
+}
+
+@mixin project-image{
+  img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@mixin project-model-styles{
+  @include project-image;
+
+  .line {
+    @include two-colour-line;
+    width: 40%;
+  }
+
+  a {
+    font-weight: bold;
+  }
+}
+
+@mixin lists{
+  font-size: 0.9rem;
+  font-weight: 100;
+  font-family: "Poppins", sans-serif !important;
+}
+
+
+button:hover{
+  color: #8cb165;
+}
+
+button{
+  color: white;
+  border: none;
+  border-radius: 6px;
+  background-color: #404345;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
